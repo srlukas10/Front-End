@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #ebeeff;
+}
+
+.container{
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #342562;
+    text-align: center;
+    border-radius: 13px;
+}
+
+.container h2{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;    
+    font-size: 22px;
+}
+
+button{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #ffa500;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 32px;
+    transition: 0.25s;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+#iniciar:hover{
+    background: #ffa500;
+}
+
+
+#minutos{   -webkit-appearance: none;  /* Remove estilo padrão do Chrome */   
+    -moz-appearance: none; /* Remove estilo padrão do FireFox */   
+    appearance: none; /* Remove estilo padrão do FireFox*/   
+    background: url(https://img.icons8.com/color/50/000000/double-down--v2.png) 
+    no-repeat #342562 ;  /* Imagem de fundo (Seta) */   
+    background-position: 200px center;
+    background-size: 25px;  /*Posição da imagem do background*/   
+    width: 250px; /* Tamanho do select, maior que o tamanho da div "div-select" */   
+    height: 40px; /* Altura do select, importante para que tenha a mesma altura em todo os navegadores */   border: 2px solid #f3278a
+    
+}
+    #minutos{
+        text-align: center;
+        border-radius: 32px;
+        font-size: 18px;
+        color: white;
+        cursor: pointer;
+        border-color: #f3278a;
+    }
+    #minutos:focus{
+        border: none;
+        background: none;
+        background: url(https://img.icons8.com/color/48/000000/double-up--v2.png) 
+        no-repeat #342562 ;  /* Imagem de fundo (Seta) */   
+        background-position: 200px center;
+        background-size: 25px; 
+        display: block;
+        margin: 30px auto;
+        text-align: center;
+        border: 2px solid #f3278a;
+        padding: 8px 40px;
+        outline: none;
+        color: white;
+        border-radius: 32px;
+        transition: 0.25s;
+        font-size: 18px;
+        background-color: #342562;
+    }
+
+#segundos{   -webkit-appearance: none;  /* Remove estilo padrão do Chrome */   
+    -moz-appearance: none; /* Remove estilo padrão do FireFox */   
+    appearance: none; /* Remove estilo padrão do FireFox*/   
+    background: url(https://img.icons8.com/color/50/000000/double-down--v2.png) 
+    no-repeat #342562;  /* Imagem de fundo (Seta) */   
+    background-position: 200px center;  /*Posição da imagem do background*/  
+    background-size: 25px; 
+    width: 250px; /* Tamanho do select, maior que o tamanho da div "div-select" */   
+    height: 40px; /* Altura do select, importante para que tenha a mesma altura em todo os navegadores */   
+    border: 2px solid #f3278a;
+}
+    #segundos{
+        text-align: center;
+        border-radius: 32px;
+        font-size: 18px;
+        color: white;
+        cursor: pointer;
+        border-color: #f3278a;
+    }
+    #segundos:focus{
+        border: 0;
+        background: none;
+        background: url(https://img.icons8.com/color/48/000000/double-up--v2.png) 
+        no-repeat #342562 ;  /* Imagem de fundo (Seta) */   
+        background-position: 200px center;
+        background-size: 25px; 
+        display: block;
+        margin: 30px auto;
+        text-align: center;
+        border: 2px solid #f3278a;
+        padding: 8px 40px;
+        outline: none;
+        color: white;
+        border-radius: 50px;
+        transition: 0.25s;
+        font-size: 18px;
+        background-color: #342562;
+    }
+
+
+    #display{
+        color: white;
+        text-transform: uppercase;
+        font-size: 30px;
+    }
+
