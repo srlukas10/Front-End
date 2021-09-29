@@ -1,0 +1,130 @@
+/*reseta as predefinições dos navegadores*/
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*É a partir daqui que acontece a mágica do CSS
+    Em body é onde indexamos a imagem de fundo e centralizamos o container. A imagem pode ser baixada em https://t.tudocdn.net/529313 */
+*
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("529313.webp");
+    min-height: 100vh;
+}
+
+/*Aqui centralizamos o container*/
+.loader
+{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+/*Aqui formatamos o título*/
+.loader h2
+{
+    font-family: consolas;
+    color: #fff;
+    font-weight: 500;
+}
+
+/* Aqui a magia começa a acontecer, primeiro temos que animar as bordas do container, caso contrário ele fica estático. Nessa parte também formatamos a borda  e a posicionamos para que não saia do lugar*/
+.loader span
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 4px solid;
+    pointer-events: none;
+    animation: animate 5s linear infinite;
+}
+
+/* Nessa parte precisamos aredondar as bordar e duplicalas, para isso precisa-se da ajuda desse site --> https://9elements.github.io/fancy-border-radius/ 
+    Caso contrário você vai ficar um século tentando arredondar as bordas e esse site te ajuda a personalizar do que jeito que você quiser.
+
+    A partir daqui não tem mistério, mas o segundo container gira ao contrário pra poder dar um poder visual atraente e não ficar bagunçado.
+
+    O mais interessante disso tudo é a sincronia, por mais que eles sejam diferentes e giram em frequência diferentes, por eles possuirem a mesma fronteira ou seja, a mesma borda, em determinado tempo eles se conectam porém como o tempo é bem curto isso acontece várias vezes.
+    */
+.loader span:nth-child(1)
+{
+    border-radius: 50% 50% 43% 57% / 30% 37% 63% 70% ;
+    border-color: #fff;
+
+}
+.loader span:nth-child(2)
+{
+    animation-direction: reverse;
+    border-radius: 50% 50% 43% 57% / 30% 37% 63% 70% ;
+    border-color: #fe509c;
+}
+.loader span:nth-child(3)
+{
+    animation-duration: 3s;
+    border-radius: 50% 50% 43% 57% / 30% 37% 63% 70%;
+    border-color: #0267ff;
+}
+
+/* Graças a isso aqui que tudo funciona, do contrário, todo o código escrito acima foi em vão...*/
+@keyframes animate
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+/*A partir daqui tem um aviso de Cookie que aparece no site, fiz mesmo só para dizer que também sei JavaScript hehe*/
+
+.box-cookies.hide {
+    display: none !important;
+  }
+  
+  .box-cookies {
+    position: fixed;
+    background: #fe509c;
+    width: 100%;
+    z-index: 998;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: consolas;
+  }
+  
+  .box-cookies .msg-cookies,
+  .box-cookies .btn-cookies {
+    text-align: center;
+    padding: 25px;
+    color: #fff;
+    font-size: 18px;
+  }
+  
+  .box-cookies .btn-cookies {
+    background: #0267ff;
+    cursor: pointer;
+    align-self: normal;
+    font-family: consolas;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .box-cookies {
+      flex-direction: column;
+    }
+  }
+  
+/*Quer ajudar a refatorar? Ajuda aí que eu vou aceitar irmão.*/
