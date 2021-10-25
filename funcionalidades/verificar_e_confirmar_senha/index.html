@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Vericador e confirmador de senhas </title>
+    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"/>
+   </head>
+<body>
+  <div class="wrapper">
+      <div class="input-box">
+        <input id="create_pw" type="password" required>
+        <label>Criar senha</label>
+      </div>
+      <div class="input-box">
+        <input id="confirm_pw" type="password" required disabled>
+        <label>Confirmar senha</label>
+        <i class="fas fa-eye-slash show"></i>
+      </div>
+      <div class="alert">
+        <i class="fas fa-exclamation-circle error"></i>
+        <span class="text">Insira pelo menos 8 caracteres</span>
+      </div>
+      <div class="input-box button">
+        <input id="button" type="button" value="Confirmar" disabled>
+      </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
