@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário com animação backflip</title>
+   </head>
+<body>
+  <div class="container">
+    <input type="checkbox" id="flip">
+    <div class="cover">
+      <div class="front">
+        <img src="img/frontImg.jpg" alt="">
+        <div class="text">
+          <span class="text-1">Uma vez que aceitamos <br>nossos limites, é obrigação <br> nossa ultrapassá-los </span>
+          <span class="text-2">Albert Einstein </span>
+        </div>
+      </div>
+      <div class="back">
+        <img class="backImg" src="img/backImg.jpg" alt="">
+        <div class="text">
+          <span class="text-1">Uma vez que aceitamos <br>nossos limites, é obrigação <br> nossa ultrapassá-los </span>
+          <span class="text-2">Albert Einstein </span>
+        </div>
+      </div>
+    </div>
+    <div class="forms">
+        <div class="form-content">
+          <div class="login-form">
+            <div class="title">Login</div>
+          <form action="#">
+            <div class="input-boxes">
+              <div class="input-box">
+                <i class="fas fa-envelope"></i>
+                <input type="text" placeholder="Digite seu e-mail" required>
+              </div>
+              <div class="input-box">
+                <i class="fas fa-lock"></i>
+                <input type="password" placeholder="Digite sua senha" required>
+              </div>
+              <div class="text"><a href="#">Esqueceu sua senha?</a></div>
+              <div class="button input-box">
+                <input type="submit" value="Entrar">
+              </div>
+              <div class="text sign-up-text">Não tem conta? <label for="flip">Inscreva-se agora</label></div>
+            </div>
+        </form>
+      </div>
+        <div class="signup-form">
+          <div class="title">Inscrever-se</div>
+        <form action="#">
+            <div class="input-boxes">
+              <div class="input-box">
+                <i class="fas fa-user"></i>
+                <input type="text" placeholder="Digite seu nome" required>
+              </div>
+              <div class="input-box">
+                <i class="fas fa-envelope"></i>
+                <input type="text" placeholder="Digite seu e-mail" required>
+              </div>
+              <div class="input-box">
+                <i class="fas fa-lock"></i>
+                <input type="password" placeholder="Digite sua senha" required>
+              </div>
+              <div class="button input-box">
+                <input type="submit" value="Cadastrar">
+              </div>
+              <div class="text sign-up-text">já tem uma conta? <label for="flip">Entre agora</label></div>
+            </div>
+      </form>
+    </div>
+    </div>
+    </div>
+  </div>
+</body>
+</html>
