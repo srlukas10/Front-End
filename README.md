@@ -6,5 +6,6 @@ Nesse repositório se encontra diferentes tipos de funções que o JS, HTML e CS
 * Variedade de formulários
 * Funcionalidade com JS
 * Animações
+
 Usar somente essas "linguagens" significa que não vamos utilizar frameworkes ou qualquer software e API's que ajudam todo e qualquer desenvolvedor.
 #
