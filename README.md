@@ -5,3 +5,4 @@ Nesse repositório se encontra diferentes tipos de funções que o JS, HTML e CS
 * Neomorphism
 * Variedade de formulários
 * Funcionalidade com JS
+* Animações
