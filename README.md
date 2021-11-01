@@ -1,2 +1,2 @@
 # Front-End
-Nesse repositório se encontra diferentes tipos de funcções que o JS, HTML e CSS PURO podem oferecer.
+Nesse repositório se encontra diferentes tipos de funções que o JS, HTML e CSS PURO podem oferecer. Em algumas pastas você vai encontrar aplicações, mas são poucas pois o foco em si são nas funcionalidades como: 
